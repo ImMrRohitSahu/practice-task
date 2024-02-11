@@ -74,7 +74,7 @@ const SignUpModal = ({ setShowSignUpModal, showSignUpModal, setShowLoginModal })
   };
 
   return (
-      <Modal show={showSignUpModal} onHide={handleClose}>
+      <Modal show={showSignUpModal} onHide={handleClose} className="m-0 p-0">
         <Modal.Header closeButton>
           <Modal.Title>User Sign Up</Modal.Title>
         </Modal.Header>
@@ -131,7 +131,6 @@ const SignUpModal = ({ setShowSignUpModal, showSignUpModal, setShowLoginModal })
           </Button>
         </Modal.Footer>
       </Modal>
-    </>
   );
 };
 
