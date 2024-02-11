@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import imageOne from "/src/assets/first-image.jpg"
 
 const FirstPhase = () => {
   return (
@@ -18,7 +19,7 @@ const FirstPhase = () => {
           </Col>
           <Col xs={12} md={5} className="p-0">
             <div className="img-div-first-phase">
-              <img src="./src/assets/first-image.jpg" />
+              <img src={imageOne} />
             </div>
           </Col>
         </Row>
