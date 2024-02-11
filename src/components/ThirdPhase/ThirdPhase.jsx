@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import imagethree from "/src/assets/third-image.jpg"
 
 const ThirdPhase = () => {
   return (
@@ -23,7 +24,7 @@ const ThirdPhase = () => {
         </Col>
         <Col xs={12} md={5} className="p-0">
           <div className="img-div-first-phase">
-            <img src="src/assets/third-image.jpg" />
+            <img src={imagethree} />
           </div>
         </Col>
       </Row>

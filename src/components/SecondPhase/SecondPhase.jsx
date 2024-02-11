@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import imageTwo from "/src/assets/second-image.jpg"
 
 const SecondPhase = () => {
   return (
@@ -6,7 +7,7 @@ const SecondPhase = () => {
       <Row className="d-flex justify-content-center align-items-center py-5">
         <Col xs={12} md={5} className="p-0 mb-5 mb-md-0 ps-2 ps-md-0 order-2 order-md-1 mt-5 mt-md-0">
           <div className="img-div-first-phase">
-            <img src="src/assets/second-image.jpg" />
+            <img src={imageTwo} />
           </div>
         </Col>
         <Col xs={12} md={7} className="p-0 ps-2 ps-md-0 order-1 order-md-2">
