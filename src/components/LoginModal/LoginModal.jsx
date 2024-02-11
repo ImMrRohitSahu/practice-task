@@ -42,7 +42,7 @@ const Login = ({ showLoginModal, setShowLoginModal }) => {
     }
   };
   return (
-    <Container className="my-4">
+    <Container className="my-4 p-0">
       <Modal show={showLoginModal} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>User Login</Modal.Title>

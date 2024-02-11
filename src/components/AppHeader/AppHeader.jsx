@@ -15,8 +15,8 @@ const AppHeader = () => {
 
   return (
     <>
-        <Headroom>
-      <Container fluid className="header p-0">
+      <Headroom>
+        <Container fluid className="header p-0">
           <Row className="m-0 py-3 px-md-4 px-1 d-flex justify-content-between align-items-center scroll-nav">
             <Col xs={8} md={2} className="p-0">
               <div className="brand-logo ps-2">
@@ -94,19 +94,21 @@ const AppHeader = () => {
               setShowSignUpModal={setShowSignUpModal}
             />
           )}
-      </Container>
-        </Headroom>
-      <SignUpModal
-        showSignUpModal={showSignUpModal}
-        setShowSignUpModal={setShowSignUpModal}
-        setShowLoginModal={setShowLoginModal}
-      />
-      {showLoginModal && (
-        <LoginModal
-          showLoginModal={showLoginModal}
+        </Container>
+      </Headroom>
+      <Container className="p-0">
+        <SignUpModal
+          showSignUpModal={showSignUpModal}
+          setShowSignUpModal={setShowSignUpModal}
           setShowLoginModal={setShowLoginModal}
         />
-      )}
+        {showLoginModal && (
+          <LoginModal
+            showLoginModal={showLoginModal}
+            setShowLoginModal={setShowLoginModal}
+          />
+        )}
+      </Container>
     </>
   );
 };
