@@ -18,7 +18,7 @@ const FirstPhase = () => {
           </Col>
           <Col xs={12} md={5} className="p-0">
             <div className="img-div-first-phase">
-              <img src="src/assets/first-image.jpg" />
+              <img src="./src/assets/first-image.jpg" />
             </div>
           </Col>
         </Row>
